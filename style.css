@@ -37,7 +37,7 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    background-image: url('path_to_hero_image'); /* Replace with a hero image */
+    background-image: url('https://via.placeholder.com/1200x400'); /* Replace with a hero image */
     background-size: cover;
     color: white;
     text-align: center;
@@ -106,4 +106,3 @@ footer {
         flex-direction: column; /* Stack products */
     }
 }
-
