@@ -1,14 +1,17 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Use Google Fonts */
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+    color: #333;
 }
 
+/* Header Styles */
 header {
-    background-color: #333;
+    background-color: #4A90E2; /* Primary color */
     color: white;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -19,11 +22,22 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
 .hero {
-    background-image: url('path_to_hero_image'); /* Replace with your hero image */
+    background-image: url('path_to_hero_image'); /* Replace with a hero image */
     background-size: cover;
     color: white;
     text-align: center;
@@ -31,13 +45,19 @@ nav li {
 }
 
 .cta-button {
-    background-color: #ff4081;
+    background-color: #FF6F61; /* Accent color */
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
 }
 
+.cta-button:hover {
+    background-color: #ff4f4f; /* Darker shade on hover */
+}
+
+/* Product Grid */
 .product-grid {
     display: flex;
     flex-wrap: wrap;
@@ -54,6 +74,11 @@ nav li {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; /* Add transition */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .product img {
@@ -62,10 +87,23 @@ nav li {
     border-radius: 5px;
 }
 
+/* Footer Styles */
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     background-color: #333;
     color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav li {
+        display: block; /* Stack items on smaller screens */
+        margin: 10px 0;
+    }
+    
+    .product-grid {
+        flex-direction: column; /* Stack products */
+    }
 }
 
